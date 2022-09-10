@@ -24,7 +24,7 @@ The features in this dataset are widely distributed in 44 states of the US, incl
 
 ## Dataset Annotations and Download
 
-We split the dataset into training and testing set with a 8:2 ratio. The annotation information is stored in file `gin.train.txt` and `gin.test.txt` respectively. You can also create your own split based on these two files. The annotation files share the same format to encode the data labels. Each line in the annatation file labels a natural feature indicated by its bounding box, category, and corresponding image file, following this pattern: 
+We split the dataset into training and testing set with a 8:2 ratio. The annotation information is stored in file `gin.train.txt` and `gin.test.txt` respectively. You can also create your own split based on these two files. The annotation files share the same format to encode the data labels. Each line in the annotation file labels a natural feature indicated by its bounding box, category, and corresponding image file, following this pattern: 
 
 ```
 relative_path_to_image_file, x_min, y_min, x_max, y_max, category
@@ -36,7 +36,7 @@ The download link for the corresponding imageries and DEMs can be found [HERE](h
 
 #### Dataset with offline data augmentation
 
-We also prepared the training annotation file `gin.train.aug.txt` used for the offline data augmentation training. This annotation is directly extended from `gin.train.txt`, incorporate several data augmentation metheds, including rotation, image inversion, color removal, pepper and salt noise injection, and Gaussian noise injection.
+We also prepared the training annotation file `gin.train.aug.txt` used for the offline data augmentation training. This annotation is directly extended from `gin.train.txt`, incorporate several data augmentation methods, including rotation, image inversion, color removal, pepper and salt noise injection, and Gaussian noise injection.
 
 The download link for the corresponding imageries and DEMs with data augmentation can be found [HERE](http://cici.lab.asu.edu/datasets/geoimagenet.aug.zip) [965 MB].
 
